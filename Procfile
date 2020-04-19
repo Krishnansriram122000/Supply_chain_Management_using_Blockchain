@@ -1,1 +1,1 @@
-web : gunicorn blockchain:app
+web : gunicorn --bind 0.0.0.0:$PORT blockchain:app
